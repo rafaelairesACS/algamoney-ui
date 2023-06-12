@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  color: #404c51;
+}
+
+.desc input{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.venc{
+  margin-bottom: 10px;
+}
+
+.venc input{
+  margin-right: 10px;
+}
+
+.venc label{
+  margin-right: 10px;
+}
+
+@media(min-width:1200px){
+  .container{
+  width: 1170px;
+  margin: 0 auto;
+  }
+}
