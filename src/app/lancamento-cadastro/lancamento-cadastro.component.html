@@ -1,0 +1,72 @@
+<div class="container">
+  <form>
+
+    <div class="gui">
+      <div>
+        <h1>Novo Lançamento</h1>
+      </div>
+
+      <div class="selection">
+        <p-selectButton [options]="tipos" #tipo ></p-selectButton>
+      </div>
+
+      <div class="content-form">
+
+        <div class="line-form-1">
+          <div class="content-inputs">
+            <label>Vencimento</label>
+            <input pInputText type="text">
+          </div>
+
+          <div class="content-inpsuts">
+            <label>{{tipo.value === 'RECEITA' ?'Recebimento':'Pagamento'}}</label>
+            <input pInputText type="text">
+          </div>
+        </div>
+
+        <div class="line-form-2">
+
+          <div class="description">
+            <label>Descrição</label>
+            <input class="input-desc" pInputText type="text">
+          </div>
+
+          <div>
+            <label>Valor</label>
+            <input pInputText type="text" placeholder="0,00">
+          </div>
+        </div>
+
+        <div class="line-form-3">
+          <div class="content-3">
+            <label>Categoria</label>
+            <p-dropdown pacleholder="Selecione" [options]="categorias" [autoWidth]="false"></p-dropdown>
+            <!-- <select class="form-select">
+              <option value=""></option>
+            </select> -->
+          </div>
+          <div class="content-3">
+            <label>Pessoa</label>
+            <select class="form-select">
+              <option value=""></option>
+            </select>
+          </div>
+        </div>
+
+        <div class="line-form4">
+          <div class="content-form">
+            <label>Observação</label>
+            <textarea pInputTextarea rows="3" style="resize: none;"></textarea>
+          </div>
+        </div>
+
+        <div class="line-form-5">
+          <button pButton type="submit" label="Salvar"></button>
+          <button pButton type="button" label="Novo"></button>
+          <a href="javascript:;">Voltar para pesquisa</a>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>

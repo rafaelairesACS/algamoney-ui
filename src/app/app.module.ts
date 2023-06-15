@@ -9,12 +9,18 @@ import {TableModule} from 'primeng/table';
 import {TooltipModule} from 'primeng/tooltip';
 import { LancamentoPesquisaComponent } from './lancamento-pesquisa/lancamento-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
+import { DropdownModule } from 'primeng/dropdown';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import {SelectButtonModule} from 'primeng/selectbutton';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LancamentoPesquisaComponent,
-    NavbarComponent
+    NavbarComponent,
+    LancamentoCadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +28,11 @@ import { NavbarComponent } from './navbar/navbar.component';
     InputTextModule,
     ButtonModule,
     TableModule,
-    TooltipModule
+    TooltipModule,
+    DropdownModule,
+    InputTextareaModule,
+    SelectButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

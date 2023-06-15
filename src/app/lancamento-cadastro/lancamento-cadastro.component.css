@@ -1,0 +1,52 @@
+.line-form-1{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  gap: 16px;
+}
+
+.content-form{
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.content-form input{
+  width: 100%;
+}
+
+.line-form-2{
+  display: flex;
+  gap: 16px;
+}
+
+.description{
+  width: 80%;
+}
+
+.line-form-3{
+  display: flex;
+  gap: 16px;
+}
+
+.line-form-3 input{
+  width: 50%;
+}
+
+.content-3{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.line-form-5 button{
+  margin-right: 16px;
+}
+
+.selection{
+  padding-bottom: 10px;
+  padding-top: 16px;
+}
+
+
+
