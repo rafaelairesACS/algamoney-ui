@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-lancamento-cadastro',
@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class LancamentoCadastroComponent {
 
   tipos = [
-    {label:'Receita',value:'RECEITA'},
-    {label:'Valor',value:'DISPESA'}
+    {label:'Receita', value:'RECEITA'},
+    {label:'Valor', value:'DESPESA'}
   ];
 
-  pessoas = [
+  pessoa = [
     {label: 'Marinelson', value: 1},
     {label: 'João Arnaldo', value: 2},
     {label: 'Sebastião Rodrigues', value: 3},
@@ -20,7 +20,7 @@ export class LancamentoCadastroComponent {
     {label: 'Joana Cruz', value: 5}
   ];
 
-  categorias = [
+  categoria = [
     {label: 'Alimentação', value: 1},
     {label: 'Transporte', value: 2},
     {label: 'Segurança', value: 3},

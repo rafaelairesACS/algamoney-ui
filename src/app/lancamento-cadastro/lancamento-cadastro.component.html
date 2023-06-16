@@ -1,5 +1,5 @@
 <div class="container">
-  <form>
+  <form autocomplete="false">
 
     <div class="gui">
       <div>
@@ -27,29 +27,34 @@
         <div class="line-form-2">
 
           <div class="description">
-            <label>Descrição</label>
-            <input class="input-desc" pInputText type="text">
+            <label>Descrição {{ descricao.errors | json }}</label>
+            <input class="input-desc" pInputText type="text" name="descricao" ngModel
+            #descricao="ngModel" required minlength="5">
+
+            <app-message [control]="descricao" error="required" text="Informe uma descricao"></app-message>
+
           </div>
 
-          <div>
+          <div class="value">
             <label>Valor</label>
-            <input pInputText type="text" placeholder="0,00">
+            <p-inputNumber mode="decimal" [minFractionDigits]="2" name="valor" ngModel></p-inputNumber>
           </div>
         </div>
 
         <div class="line-form-3">
           <div class="content-3">
             <label>Categoria</label>
-            <p-dropdown pacleholder="Selecione" [options]="categorias" [autoWidth]="false"></p-dropdown>
+            <p-dropdown [options]="categoria" placeholder="Selecione"></p-dropdown>
             <!-- <select class="form-select">
               <option value=""></option>
             </select> -->
           </div>
           <div class="content-3">
             <label>Pessoa</label>
-            <select class="form-select">
+            <p-dropdown [options]="pessoa" [filter]="true" placeholder="Selecione"></p-dropdown>
+            <!-- <select class="form-select">
               <option value=""></option>
-            </select>
+            </select> -->
           </div>
         </div>
 

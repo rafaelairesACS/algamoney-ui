@@ -48,5 +48,10 @@
   padding-top: 16px;
 }
 
+.value{
+  display: flex;
+  flex-direction: column;
+}
+
 
 

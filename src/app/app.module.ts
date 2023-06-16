@@ -14,13 +14,20 @@ import { DropdownModule } from 'primeng/dropdown';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {SelectButtonModule} from 'primeng/selectbutton';
 import { FormsModule } from '@angular/forms';
+import {CalendarModule} from 'primeng/calendar';
+import {InputNumberModule} from 'primeng/inputnumber';
+import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+import {InputMaskModule} from 'primeng/inputmask';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LancamentoPesquisaComponent,
     NavbarComponent,
-    LancamentoCadastroComponent
+    LancamentoCadastroComponent,
+    PessoaCadastroComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +39,11 @@ import { FormsModule } from '@angular/forms';
     DropdownModule,
     InputTextareaModule,
     SelectButtonModule,
+    FormsModule,
+    CalendarModule,
+    SelectButtonModule,
+    InputNumberModule,
+    InputMaskModule,
     FormsModule
   ],
   providers: [],
