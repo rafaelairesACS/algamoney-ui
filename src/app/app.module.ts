@@ -27,7 +27,7 @@ import { MessageComponent } from './message/message.component';
     NavbarComponent,
     LancamentoCadastroComponent,
     PessoaCadastroComponent,
-    MessageComponent
+    MessageComponent,
   ],
   imports: [
     BrowserModule,
