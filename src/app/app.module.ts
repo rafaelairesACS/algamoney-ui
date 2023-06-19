@@ -7,9 +7,9 @@ import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
 import {TooltipModule} from 'primeng/tooltip';
-import { LancamentoPesquisaComponent } from './lancamento-pesquisa/lancamento-pesquisa.component';
+import { LancamentoPesquisaComponent } from './lancamentos/lancamento-pesquisa/lancamento-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
+import { LancamentoCadastroComponent } from './lancamentos/lancamento-cadastro/lancamento-cadastro.component';
 import { DropdownModule } from 'primeng/dropdown';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {SelectButtonModule} from 'primeng/selectbutton';
@@ -18,16 +18,14 @@ import {CalendarModule} from 'primeng/calendar';
 import {InputNumberModule} from 'primeng/inputnumber';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import {InputMaskModule} from 'primeng/inputmask';
-import { MessageComponent } from './message/message.component';
+import { MessageComponent } from './shared/message/message.component';
+import { LancamentosModule } from './lancamentos/lancamentos.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LancamentoPesquisaComponent,
     NavbarComponent,
-    LancamentoCadastroComponent,
-    PessoaCadastroComponent,
-    MessageComponent,
+    PessoaCadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +42,7 @@ import { MessageComponent } from './message/message.component';
     SelectButtonModule,
     InputNumberModule,
     InputMaskModule,
-    FormsModule
+    LancamentosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
